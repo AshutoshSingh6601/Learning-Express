@@ -17,19 +17,30 @@ const PORT = process.env.PORT || 4000
 // express middleware
 app.use(express.json())
 
-app.get('/', (req, res)=>{
-    res.end('Home page')
-    // res.send('Home page')
-})
+// req.url === routeName
+// "/Home" === "/Home"
 
-app.post('/', (req, res)=>{
-    console.log(req.body)
-    res.end('Home page')
-})
-
-// app.use('/', (req, res, next)=>{
-//     res.send('First Middleware')
+// app.get('/Home', (req, res)=>{
+//     res.end('Home page')
+//     // res.send('Home page')
 // })
+
+// app.post('/', (req, res)=>{
+//     console.log(req.body)
+//     res.end('Home page')
+// })
+
+// req.url === routeName
+// "/users".startsWith("/users")
+// "/users" => one block
+// if "/users" comes in sec block with some additional block "/users/12" then also the first middleware will call bcz the first block of the both middleware were match so these will call first middleware instead of second
+
+app.use('/users/23', (req, res, next)=>{
+    res.send('First Middleware')
+})
+app.use('/users/12', (req, res, next)=>{
+    res.send('Second Middleware')
+})
 
 app.listen(PORT, ()=>{
     console.log(`Server Listing of http://localhost:${PORT}`)
