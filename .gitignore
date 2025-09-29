@@ -1,4 +1,5 @@
-/node_modules
-/Middleware Doc.txt
+node_modules
+Middleware Doc.txt
 .env
 public
+storage
