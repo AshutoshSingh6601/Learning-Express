@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "test",
+    "parentDir": 23,
+    "size": 2454
+  },
+  {
+    "id": "c727ef38-a5d8-4729-81ae-940d1dd393df",
+    "name": "demo.js",
+    "extension": ".js"
+  },
+  {
+    "id": "67d80d96-eb9b-4857-83fc-49e98c97ea6b",
+    "name": "hero.mp4",
+    "extension": ".mp4"
+  },
+  {
+    "id": "41f7c272-126b-470c-a582-f38cc0448a47",
+    "name": "demo.txt",
+    "extension": ".txt"
+  },
+  {
+    "id": "40d2163c-1597-4bc0-97fb-7984a81File",
+    "name": "dummy.txt",
+    "extension": ".txt",
+    "parentDirId": "40d2163c-1597-4bc0-97fb-7984a81Folder"
+  }
+]

@@ -15,7 +15,7 @@ app.use(cors());
 
 app.use('/directory', directoryRoute)
 
-app.use('/files', fileRoute)
+app.use('/file', fileRoute)
 
 app.listen(port, () => {
   console.log(`Server Listening on http://localhost:${port}`);
